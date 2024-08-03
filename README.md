@@ -1,5 +1,5 @@
 # KairosUI
 
-Under Construction!
-Needs TogetherAPI
-Working to Add Claude, Gemini & GPT 
+## Under Construction!
+## Needs TogetherAPI
+## Working to Add Claude, Gemini & GPT 
