@@ -69,24 +69,8 @@ export default function NavBar() {
                 </div>
               </div>
               <div className="hidden justify-end gap-2 xmd:flex sm:items-center lg:flex-1">
-                {/* <GlowWrapper className="opacity-40">
-                  <PrimaryButton
-                    onClick={() => {
-                      window.open("https://forms.gle/E7rNShEAMfkxrX8z5", "_blank");
-                    }}
-                  >
-                    <>
-                      <span>Join the Waitlist</span>
-                      <FaChevronRight
-                        size="12"
-                        className="text-gray-700 transition-transform group-hover:translate-x-1"
-                      />
-                    </>
-                  </PrimaryButton>
-                </GlowWrapper> */}
               </div>
               <div className="-mr-2 flex items-center xmd:hidden">
-                {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                   <span className="sr-only">Open main menu</span>
                   {open ? (

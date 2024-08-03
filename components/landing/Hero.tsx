@@ -71,7 +71,7 @@ const Hero: FC<{ className?: string }> = ({ className }) => {
       <div className="relative z-10 col-span-1 max-w-full md:order-first">
         <div className="relative flex flex-col items-center gap-4 md:items-start md:gap-12">
           <BannerBadge
-            href="https://forms.gle/E7rNShEAMfkxrX8z5"
+            href="https://KairoUI.vercel.app/code"
             target="_blank"
             className="hidden md:flex"
           >
@@ -138,7 +138,7 @@ const Hero: FC<{ className?: string }> = ({ className }) => {
               <PrimaryButton
                 icon={<Image src="email-24x24.svg" width="24" height="24" alt="Email" />}
                 onClick={() => {
-                  window.open("https://forms.gle/E7rNShEAMfkxrX8z5", "_blank");
+                  window.open("https://Kairosui.vercel.app/code", "_blank");
                 }}
               >
                 <>
