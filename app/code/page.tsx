@@ -181,20 +181,19 @@ export default function Home() {
     }
   }, [loading, generatedCode]);
 
+
+{/* Return code */}
   return (
     <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center py-2">
       <Header />
-
       <main className="mt-12 flex w-full flex-1 flex-col items-center px-4 text-center sm:mt-20">
         <a
           className="mb-4 inline-flex h-7 shrink-0 items-center gap-[9px] rounded-[50px] border-[0.5px] border-solid border-[#E6E6E6] bg-[rgba(234,238,255,0.65)] bg-gray-100 px-7 py-5 shadow-[0px_1px_1px_0px_rgba(0,0,0,0.25)]"
-
           target="_blank"
         >
           <span className="text-center">
-            Powered by <span className="font-medium">Llama3.1 405B</span> and{" "} 
-            <span className="font-medium">Claude 3.5</span>
-          </span>
+            Made with <span className="font-medium">❤️ by</span> <span className="font-bold"><a href="https://github.com/sarthakkapila">Sarthak Kapila ツ</a></span>
+            </span>
         </a>
         
         <h1 className="my-6 max-w-3xl text-4xl font-bold text-white sm:text-6xl">

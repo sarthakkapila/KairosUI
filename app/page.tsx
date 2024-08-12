@@ -1,4 +1,3 @@
-
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
@@ -17,9 +16,7 @@ function LandingPage() {
         <Blobs />
       </div>
       <div className="absolute flex min-h-screen items-start justify-center w-full -z-10">
-
-      </div>
-      
+      </div> 
       <main className="min-h-screen flex flex-col items-center justify-between p-4 md:p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           <div className="flex text-white flex-col gap-4 w-full lg:flex-row lg:items-center lg:justify-between">
@@ -100,4 +97,3 @@ function LandingPage() {
 }
 
 export default LandingPage;
-
