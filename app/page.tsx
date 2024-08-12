@@ -22,7 +22,7 @@ function LandingPage() {
       
       <main className="min-h-screen flex flex-col items-center justify-between p-4 md:p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <div className="flex text-white font-extrabold flex-col gap-4 w-full lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex text-white flex-col gap-4 w-full lg:flex-row lg:items-center lg:justify-between">
             <a
               href="https://github.com/sarthakkapila/KairosUI"
               className="flex items-center justify-between gap-4 border-b border-gray-300 pb-6 pt-4 lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0"
@@ -40,7 +40,7 @@ function LandingPage() {
               </svg>
             </a>
           </div>
-          <div className="fixed text-white font-extrabold bottom-0 left-0 flex flex-col gap-4 h-54 w-screen  justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <div className="fixed text-white bottom-0 left-0 flex flex-col gap-4 h-54 w-screen  justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="pointer-events-none flex place-items-center items-center justify-center gap-2 p-8 lg:pointer-events-auto lg:p-0 font-sans text-lg"
               href=""
@@ -60,11 +60,11 @@ function LandingPage() {
             </a>
           </div>
         </div>
-          <div className="text-6xl text-neon-pink font-bold">
+          <div className="text-6xl text-neon-pink font-mono">
           KairosUI
           </div>
         <div>
-<button className="bg-black no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-base font-semibold leading-6 text-white inline-block"
+<button className="bg-neon-pink no-underline group cursor-pointer relative shadow-2xl shadow-neon-pink rounded-full p-px text-base font-semibold leading-6 text-white inline-block"
         onClick={()=> {
               router.push('/code')
             }}>
