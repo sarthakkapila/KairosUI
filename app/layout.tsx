@@ -4,6 +4,7 @@ import Image from "next/image";
 import PlausibleProvider from "next-plausible";
 import Globe from "@/components/Globe"; // Import the Globe component
 
+import { dark, neobrutalism } from '@clerk/themes'
 
 import { ClerkProvider } from "@clerk/nextjs"
 let title = "KairosUI - AI Components";
