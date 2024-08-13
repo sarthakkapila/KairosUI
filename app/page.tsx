@@ -57,7 +57,7 @@ function LandingPage() {
             </a>
           </div>
         </div>
-          <div className="text-6xl text-neon-pink font-mono">
+          <div className="text-6xl font-medium  text-neon-pink font-mono">
           KairosUI
           </div>
         <div>
