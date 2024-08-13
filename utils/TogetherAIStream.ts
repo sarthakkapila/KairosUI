@@ -24,6 +24,7 @@ export async function TogetherAIStream(payload: TogetherAIStreamPayload) {
 
   let res;
 
+// API configs 
   if (process.env.HELICONE_API_KEY) {
     res = await fetch("https://together.helicone.ai/v1/chat/completions", {
       headers: {
