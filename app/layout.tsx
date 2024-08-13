@@ -4,6 +4,8 @@ import Image from "next/image";
 import PlausibleProvider from "next-plausible";
 import Globe from "@/components/Globe"; // Import the Globe component
 
+
+import { ClerkProvider } from "@clerk/nextjs"
 let title = "KairosUI - AI Components";
 let description = "Generate beautiful components using AI";
 let url = "https://KairosUI.vercel.app/";
@@ -40,6 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <head>
         <PlausibleProvider domain="KairoUI.vercel.app" />
@@ -59,5 +62,6 @@ export default function RootLayout({
         <div className="isolate">{children}</div>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
