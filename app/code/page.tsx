@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollTo } from "@/hooks/use-scroll-to";
 import { Sandpack } from "@codesandbox/sandpack-react";
-import { dracula as draculaTheme } from "@codesandbox/sandpack-themes";
+import { monokaiPro } from "@codesandbox/sandpack-themes";
 import { CheckIcon } from "@heroicons/react/16/solid";
 import {
   ArrowLongRightIcon,
@@ -33,7 +33,7 @@ export default function Home() {
     [],
   );
 
-  let loading = status === "creating" || status === "updating";
+  let loading = status === "creating something cool" || status === "making changes";
 
   async function generateCode(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -197,10 +197,9 @@ export default function Home() {
         </a>
         
         <h1 className="my-6 max-w-3xl text-4xl font-bold text-white sm:text-6xl">
-          Made using<span className=" text-neon-pink"> ShadCN</span>
-          <br /> & <span className="text-neon-pink">AceternityUI</span>
+          Powered by<span className=" text-neon-pink"> UI<br/></span>
+          <span className="text-neon-pink"> Libraries you ❤️</span>
         </h1>
-
         <form className="w-full max-w-xl" onSubmit={generateCode}>
           <fieldset disabled={loading} className="disabled:opacity-75">
             <div className="relative mt-5">
@@ -211,7 +210,7 @@ export default function Home() {
                     required
                     name="prompt"
                     className="w-full rounded-l-3xl bg-transparent px-6 py-5 text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon-pink"
-                    placeholder="Make me a 3D animated component..."
+                    placeholder="Make me a Todo App..."
                   />
                 </div>
                 <button
@@ -227,6 +226,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
+
             <div className="mt-6 flex items-center justify-center gap-3">
               <p className="text-sm font-extrabold text-neon-pink">Model:</p>
               <Select.Root
@@ -249,14 +249,14 @@ export default function Home() {
                           value:
                             "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
                         },
-                        {
-                          label: "Llama 3.1 70B",
-                          value: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
-                        },
-                        {
-                          label: "Gemma 2 27B",
-                          value: "google/gemma-2-27b-it",
-                        },
+                        //{
+                        //  label: "Llama 3.1 70B",
+                        //  value: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                        //},
+                        //{
+                        //  label: "Gemma 2 27B",
+                        //  value: "google/gemma-2-27b-it",
+                        //},
                       ].map((model) => (
                         <Select.Item
                           key={model.value}
@@ -315,8 +315,7 @@ export default function Home() {
                       <button
                         type="submit"
                         disabled={loading}
-                        className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-3xl px-3 py-2 text-sm font-semibold text-neon-pink hover:text-neon-pink focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon-pink disabled:text-gray-900"
-                      >
+                        className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-3xl px-3 py-2 text-sm font-semibold text-neon-pink hover:text-neon-pink focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon-pink disabled:text-gray-900">
                         {loading ? (
                           <LoadingDots color="black" style="large" />
                         ) : (
@@ -353,10 +352,12 @@ export default function Home() {
                 </Tooltip.Provider>
               </div>
             </div>
+
+              {/* Sandbox Code */}
             <div className="relative mt-8 w-full overflow-hidden">
               <div className="isolate">
                 <Sandpack
-                  theme={draculaTheme}
+                  theme={monokaiPro}
                   options={{
                     showNavigator: true,
                     externalResources: [
