@@ -197,8 +197,7 @@ export default function Home() {
         </a>
         
         <h1 className="my-6 max-w-3xl text-4xl font-bold text-white sm:text-6xl">
-          Powered by<span className=" text-neon-pink"> UI<br/></span>
-          <span className="text-neon-pink"> Libraries you ❤️</span>
+          Let AI Do the<br/>          <span className="text-neon-pink"> Heavy Lifting 💪</span>
         </h1>
         <form className="w-full max-w-xl" onSubmit={generateCode}>
           <fieldset disabled={loading} className="disabled:opacity-75">
@@ -231,7 +230,7 @@ export default function Home() {
               <p className="text-sm font-extrabold text-neon-pink">Model:</p>
               <Select.Root
                 name="model"
-                defaultValue="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
+                defaultValue="meta-llama/Meta-Llama-3-8B-Instruct-Lite"
                 disabled={loading}
               >
                 <Select.Trigger className="group flex w-full max-w-xs items-center rounded-2xl border-[6px] border-gray-300 bg-white px-4 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon-pink">
