@@ -6,20 +6,36 @@ import Blobs from '@/components/landing/Blobs';
 import Globe from '@/components/landing/Globe';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-
+import { UserButton, useUser } from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
 function LandingPage() {
   const router = useRouter();
-
+  const { user } = useUser();
   return (
+
     <div className="relative h-screen">
       <div className="absolute flex max-h-screen h-full overflow-hidden items-center justify-center w-full -z-10 blur-xl">
         <Blobs />
       </div>
       <div className="absolute flex min-h-screen items-start justify-center w-full -z-10">
       </div> 
+<UserButton
+      appearance={ {
+          
+        baseTheme: dark,
+        elements: {
+          avatarBox: "h-8 w-8",
+          userButtonOuterIdentifier: "text-sm font-semibold text-white",
+          userButtonPopoverCard: "bg-white shadow-lg rounded-lg border border-gray-200",
+          userButtonPopoverFooter: "hidden",
+        },
+      }}
+      showName={false}
+    />
+
       <main className="min-h-screen flex flex-col items-center justify-between p-4 md:p-24">
-        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <div className="flex text-white flex-col gap-4 w-full lg:flex-row lg:items-center lg:justify-between">
+        <div className=" max-w-5xl w-full justify-between font-mono text-sm lg:flex">
+          <div className="flex text-white p-4 flex-col gap-4 w-full lg:flex-row lg:items-center lg:justify-between">
             <a
               href="https://github.com/sarthakkapila/KairosUI"
               className="flex items-center justify-between gap-4 border-b border-gray-300 pb-6 pt-4 lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0"
@@ -57,7 +73,7 @@ function LandingPage() {
             </a>
           </div>
         </div>
-          <div className="text-6xl font-medium  text-neon-pink font-mono">
+          <div className="pb-32 text-6xl font-bold  text-neon-pink font-mono">
           KairosUI
           </div>
         <div>
