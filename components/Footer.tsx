@@ -2,31 +2,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mb-3 mt-5 flex h-16 w-full flex-col items-center justify-between space-y-3 px-3 pt-4 text-center sm:mb-0 sm:h-20 sm:flex-row sm:pt-2">
-      <div>
-        <div className="font-medium">
-          Built with{" "}
-          <a
-            // href="https://dub.sh/together-ai"
-            className="font-semibold text-neon-pink underline-offset-4 transition hover:text-white hover:underline"
-          >
-            Llama 3.1 405B
-          </a>{" "}
-          and{" "}
-          <a
-            // href="https://dub.sh/together-ai"
-            className="font-semibold text-neon-pink underline-offset-4 transition hover:text-white hover:underline"
-          >
-            Together AI
-          </a>
-          .
-        </div>
-      </div>
-      <div className="flex space-x-4 pb-4 sm:pb-0">
+ 
+<footer className="mb-3 mt-5 flex h-16 w-full flex-col items-end justify-between space-y-3 px-3 pt-4 text-center sm:mb-0 sm:h-20 sm:flex-row sm:justify-end sm:pt-2">
+    <div className="flex items-end space-x-4 pb-4 sm:pb-0">
         <Link
           href="https://twitter.com/sarthakkapila0"
           className="group"
-          aria-label=""
+          aria-label="Sarthak Kapila on Twitter"
         >
           <svg
             aria-hidden="true"
@@ -38,7 +20,7 @@ export default function Footer() {
         <Link
           href="https://github.com/sarthakkapila/KairosUI"
           className="group"
-          aria-label="TaxPal on GitHub"
+          aria-label="KairosUI on GitHub"
         >
           <svg
             aria-hidden="true"
