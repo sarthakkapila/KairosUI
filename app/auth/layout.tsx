@@ -9,10 +9,14 @@ type Props = {
 
 const Layout = async({ children }: Props) => {
   const user = await currentUser();
-
-  if (user) redirect('/');
-
-  return (
+   if (user) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    };
+  }  return (
     <> 
       <div className="h-screen text-white flex flex-col justify-center items-center w-full">
         <div className="flex flex-row items-center p-6">
