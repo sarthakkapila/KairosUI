@@ -3,6 +3,7 @@
 import { SignIn } from '@clerk/nextjs';
 import Link from 'next/link';
 import Image from 'next/image';
+import { dark, neobrutalism } from '@clerk/themes';
 export default function Signin() {
   return (
     <div className="flex items-center justify-center min-h-screen relative overflow-hidden">
@@ -19,9 +20,10 @@ export default function Signin() {
         <h2 className="text-2xl mb-8">AI Frontend Developer</h2>
         
         {/* Sign-in box */}
-        <div className="bg-neon-pink/20 text-white backdrop-blur-md rounded-lg p-8">
+        <div className="text-white backdrop-blur-md rounded-lg p-8">
           <SignIn
             appearance={{
+              baseTheme: dark,
               elements: {
                 rootBox: "shadow-none bg-transparent",
                 card: "shadow-none bg-transparent",
@@ -39,7 +41,7 @@ export default function Signin() {
             }}
           />
           <div className="mt-4 text-center">
-            <p className="text-sm text-black font-medium">
+            <p className="text-sm text-white font-thin">
               Don't have an account?{" "}
               <Link href="/auth/signup" className="font-medium text-blue-400 hover:text-blue-300">
                 Sign up

@@ -3,6 +3,7 @@
 import { SignUp } from '@clerk/nextjs';
 import Link from 'next/link';
 import Image from 'next/image';
+import { dark } from '@clerk/themes';
 export default function Signup() {
   return (
     <div className="flex items-center justify-center min-h-screen relative overflow-hidden"> 
@@ -17,9 +18,10 @@ export default function Signup() {
         <h1 className="text-4xl font-bold mb-2">Welcome to KairosUI!</h1>
         <h2 className="text-2xl mb-8">Join our AI Frontend Developer community</h2> 
         {/* Sign-up box */}
-        <div className="bg-neon-pink/30 backdrop-blur-md rounded-lg p-8">
+        <div className="backdrop-blur-md rounded-lg p-8">
           <SignUp
             appearance={{
+              baseTheme: dark,
               elements: {
                 rootBox: "shadow-none bg-transparent",
                 card: "shadow-none bg-transparent",
@@ -37,7 +39,7 @@ export default function Signup() {
             }}
           />
           <div className="mt-4 text-center">
-            <p className="text-sm text-black font-medium">
+            <p className="text-sm text-white font-thin">
               Already have an account?{' '}
               <Link href="/auth/signin" className="font-medium text-blue-400 hover:text-blue-300">
                 Sign in
