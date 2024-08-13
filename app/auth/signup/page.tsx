@@ -10,7 +10,7 @@ export default function Signup() {
       <div className="text-center text-white z-10 w-full max-w-md">
         {/* Logo */}
         <div className="mb-6">
-          <Image src="/dark.ico" alt="KairosUI" className="h-12 mx-auto" />
+          <Image src="/dark.ico" alt="KairosUI" width={50} height={50} className="h-12 mx-auto" />
         </div>
         
         {/* Titles */}
