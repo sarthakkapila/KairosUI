@@ -1,6 +1,6 @@
 import { SignIn } from '@clerk/nextjs';
 import Link from 'next/link';
-
+import Image from 'next/image';
 export default function Signin() {
   return (
     <div className="flex items-center justify-center min-h-screen relative overflow-hidden">
@@ -8,7 +8,7 @@ export default function Signin() {
       <div className="text-center text-white z-10 w-full max-w-md">
         {/* Logo */}
         <div className="mb-6">
-          <img src="/dark.ico" alt="KairosUI" className="h-12 mx-auto" />
+          <Image src="/dark.ico" alt="KairosUI" className="h-12 mx-auto" />
           <p></p>
         </div>
         
