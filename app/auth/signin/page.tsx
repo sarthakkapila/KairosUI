@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { SignIn } from '@clerk/nextjs';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -38,7 +40,7 @@ export default function Signin() {
           />
           <div className="mt-4 text-center">
             <p className="text-sm text-black font-medium">
-              Don't have an account?{' '}
+              Don't have an account?{" "}
               <Link href="/auth/signup" className="font-medium text-blue-400 hover:text-blue-300">
                 Sign up
               </Link>
