@@ -33,7 +33,7 @@ export default function Home() {
     [],
   );
 
-  let loading = status === "creating something cool" || status === "making changes";
+  let loading = status === "updating" || status === "updated";
 
   async function generateCode(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
