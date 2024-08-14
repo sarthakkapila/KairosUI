@@ -1,15 +1,22 @@
 # KairosUI - generate beautiful UIs efforessly
 
-## Screenshots:
-## 
 ## 🚀 Introduction
-
-**KairosUI** is a revolutionary platform that enables you to generate fully-functional small apps with just one prompt. By harnessing the power of Meta's Llama 3.1 & Together.ai to streamline your development process like never before. This project is perfect for developers, hobbyists, and anyone looking to automate code generation.
----
+**KairosUI** is a platform that enables you to generate fully-functional small apps with just one prompt. By harnessing the power of Meta's Llama 3.1 & Together.ai to streamline your development process like never before. This project is perfect for developers, hobbyists, and anyone looking to automate code generation.
 
 ## 🚀 BackStory
-**KairosUI** is a spin-off/inspired from an old project of mine **Kairos** [Kairos](https://github.com/sarthakkapila/kairos) [Kairos Live link](https://kairos-ai.streamlit.app) which is a project I made when DevinAI was launched.
+**KairosUI** is a spin-off/inspired from an old project of mine **Kairos** [Kairos Repo](https://github.com/sarthakkapila/kairos) [Kairos Live link](https://kairos-ai.streamlit.app) which is a project I made when DevinAI was launched.
 Kairos was a full fledged AI developer which was made using various AI agents that would identify the prompt, devise a plan, research on it and then scrape the internet to generate code and even the dependencies!
+
+## Screenshots:
+![KairosUI - AI Components · 10 21am · 08-14](https://github.com/user-attachments/assets/9b37d926-8d39-421c-b50e-e649a368bc5b)
+![KairosUI1](https://github.com/user-attachments/assets/cfbbb3fb-b8b0-49f1-8d8f-852b1cd8a0b8)
+![KairosUI3](https://github.com/user-attachments/assets/308d2971-608f-4798-8428-c5c50cb6bbfb)
+![KairosUI5](https://github.com/user-attachments/assets/9dcd63d1-38f3-4e34-8bd4-74304b2a0f52)
+![KairosUI - AI Components · 11 03am · 08-14](https://github.com/user-attachments/assets/197a4b45-b89a-4535-9155-baf6d069a2f8)
+![KairosUI - AI Components · 10 59am · 08-14](https://github.com/user-attachments/assets/19bea8a0-a945-4d03-85a2-acd93e7a40c9)
+![KairosUI - AI Components · 11 02am · 08-14](https://github.com/user-attachments/assets/e53f85ca-dfde-4018-9a16-1e919c3e1f51)
+
+
 ## 🛠️ Tech Stack
 
 KairosUI is built using cutting-edge technologies to deliver an efficient and seamless experience:
