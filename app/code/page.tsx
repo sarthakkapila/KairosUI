@@ -359,6 +359,7 @@ export default function Home() {
                   options={{
                     showNavigator: true,
                     externalResources: [
+                      "https://cdn.jsdelivr.net/npm/shadcn-ui@0.8.0/+esm",
                       "https://unpkg.com/@tailwindcss/ui/dist/tailwind-ui.min.css",
                     ],
                     editorHeight: "80vh",
