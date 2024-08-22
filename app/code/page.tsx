@@ -244,12 +244,16 @@ export default function Home() {
                     <Select.Viewport className="p-2">
                       {[
                         {
-                          label: "Llama 3 (8B)",
-                          value: "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+                          label: "Llama 3.1 Turbo (8B)",
+                          value: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
                         },
                         {
-                          label: "Code Llama (13B)",
-                          value: "codellama/CodeLlama-13b-Instruct-hf",
+                          label: "Llama 3.1 (70B)",
+                          value: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                        },
+                        {
+                          label: "Llama 3 (8B)",
+                          value: "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
                         },
                       ].map((model) => (
                         <Select.Item
